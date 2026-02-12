@@ -13,14 +13,52 @@ let Text = document.querySelector("#text");
 let ButtonFr = document.querySelector("#btn-fr");
 let ButtonNl = document.querySelector("#btn-nl");
 let Titel = document.querySelector("#title");
-let subtitle = document.querySelector("#subtitle");
+let Subtitle = document.querySelector("#subtitle");
+
 //2. Set initial content on load
-text.innerText =;
+Text.innerText = textNL;
+Titel.innerText = titleNL;
+Subtitle.innerText = subtitleNL;
 
 
 
 //3. Select buttons
 
+ButtonNl.disabled = true;
+
 //4. Add event listeners
+
+ButtonNl.addEventListener('click', function () {
+
+
+
+
+    Text.innerText = textNL;
+    Titel.innerText = titleNL;
+    Subtitle.innerText = subtitleNL;
+
+
+    ButtonNl.disabled = true;
+    ButtonFr.disabled = false;
+
+
+
+
+});
+
+
+
+ButtonFr.addEventListener('click', function () {
+
+
+    Text.innerText = textFR;
+    Titel.innerText = titleFR;
+    Subtitle.innerText = subtitleFR;
+
+    ButtonNl.disabled = false;
+    ButtonFr.disabled = true;
+
+
+});
 
 //5. Create, configure and append image

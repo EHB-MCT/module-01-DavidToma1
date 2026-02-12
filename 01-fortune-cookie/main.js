@@ -19,13 +19,12 @@ let button = document.querySelector("#cookie-btn");
 
 
 
+console.log("CLICKEDCLICKED");
 button.addEventListener('click', function () {
-    console.log("CLICKEDCLICKED");
+
 
 
     let randomIndex = Math.floor(Math.random() * fortunes.length);
     display.innerText = fortunes[randomIndex];
 });
-
-
 
