@@ -1,0 +1,42 @@
+body {
+    background-color: #f5f5dc;
+    /* Beige */
+    color: #3e3e3e;
+    /* Dark Text */
+    font-family: "Times New Roman", Times, serif;
+    /* Large Serif */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+#cookie-container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+#fortune-display {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #3e3e3e;
+    color: #f5f5dc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    /* Contrast font for button */
+    transition: transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
