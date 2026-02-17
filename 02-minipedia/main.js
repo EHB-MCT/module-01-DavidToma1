@@ -49,3 +49,9 @@ ButtonFr.addEventListener('click', function () {
 });
 
 //5. Create, configure and append image
+let imgElement = document.createElement("img");
+imgElement.src = "./appel.jpg";
+imgElement.alt = "De appel is een smakelijke vrucht";
+
+
+document.querySelector(".article").append(imgElement);
