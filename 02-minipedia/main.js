@@ -29,36 +29,23 @@ ButtonNl.disabled = true;
 //4. Add event listeners
 
 ButtonNl.addEventListener('click', function () {
-
-
-
-
     Text.innerText = textNL;
     Titel.innerText = titleNL;
     Subtitle.innerText = subtitleNL;
 
-
     ButtonNl.disabled = true;
     ButtonFr.disabled = false;
-
-
-
-
 });
 
 
 
 ButtonFr.addEventListener('click', function () {
-
-
     Text.innerText = textFR;
     Titel.innerText = titleFR;
     Subtitle.innerText = subtitleFR;
 
     ButtonNl.disabled = false;
     ButtonFr.disabled = true;
-
-
 });
 
 //5. Create, configure and append image
